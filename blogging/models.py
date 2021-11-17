@@ -15,7 +15,12 @@ class Post(models.Model):
     # published_date
     published_date = models.DateTimeField(blank=True, null=True)
 
+    def __str__(self):
+        return self.title
+
 class Category(models.Model):
+    class Meta:
+        verbose_name_plural = "Categories"
     # name
     name = models.CharField(max_length=128, unique=True)
     # description
@@ -24,4 +29,4 @@ class Category(models.Model):
     posts = models.ManyToManyField(Post, blank=True, related_name='categories')
 
     def __str__(self):
-        return self.title
+        return self.name
