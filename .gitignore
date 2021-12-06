@@ -4,3 +4,7 @@ venv
 *.sqlite3
 
 mysite/mysite/__pycache__
+mysite/__pycache__/settings.cpython-39.pyc
+mysite/__pycache__/settings.cpython-39.pyc
+mysite/__pycache__/urls.cpython-39.pyc
+mysite/__pycache__/wsgi.cpython-39.pyc
