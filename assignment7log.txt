@@ -1,0 +1,47 @@
+commit fc46c6c66922b3553cbadecfd1b0c486a511b45c
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Mon Dec 6 01:39:35 2021 -0800
+
+    Completed Inline Admin functions.  Assignment 7
+
+commit fcd6602d505f6a02b886d15c0c010cf5639899e3
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Sun Dec 5 20:07:38 2021 -0800
+
+    activity complete
+
+commit b1c33929e18589bb26b53c933bc0507ebbe7e6a7
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Tue Nov 30 20:23:20 2021 -0500
+
+    ran black on blogging
+
+commit dcb11eede89e280b46872e7351d1f7dfd5a99e4d
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Wed Nov 17 17:34:23 2021 -0800
+
+    Tests OK for blog list_view
+
+commit 853852719707cf709d40e0d72e07f2caa365de36
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Wed Nov 17 15:52:49 2021 -0800
+
+    stub view
+
+commit a5066a2315d034636c5f55cb90b0b0d36ac678fb
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Wed Nov 17 15:35:51 2021 -0800
+
+    merge with master
+
+commit c1a69943139a686337129b41de8df0f9b98bad6d
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Wed Nov 10 16:23:43 2021 -0800
+
+    Completed lesson 6.
+
+commit cf284b1034eb95de05af7246a6451b9a3c2bd6cc
+Author: Colin Ramsay <ctramsay@uw.edu>
+Date:   Wed Nov 10 16:22:11 2021 -0800
+
+    Initial commit.

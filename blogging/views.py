@@ -2,7 +2,18 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
 from blogging.models import Post
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 
+class PostListView(ListView):
+    published = Post.objects.exclude(published_date__exact=None)
+    queryset = published.order_by("-published_date")
+    template_name = "blogging/list.html"
+
+class BloggingDetailView(DetailView):
+    published = Post.objects.exclude(published_date__exact=None)
+    queryset = published.order_by("-published_date")
+    template_name = "blogging/detail.html"
 
 def stub_view(request, *args, **kwargs):
     body = "Stub View\n\n"
