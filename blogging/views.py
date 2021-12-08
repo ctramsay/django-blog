@@ -5,7 +5,7 @@ from blogging.forms import MyPostForm
 from blogging.models import Post
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from datetime import timezone
+from datetime import datetime
 
 
 class PostListView(ListView):
@@ -31,11 +31,11 @@ def add_model(request):
         form = MyPostForm(request.POST)
         if form.is_valid():
             model_instance = form.save(commit=False)
-            model_instance.published_date = timezone.now()
+            model_instance.published_date = datetime.now()
             model_instance.save()
             return redirect('/')
-    elif request.method == 'GET':
+    else:
         form = MyPostForm()
-        return (request, "blogging/add.html", {'form':form})
+        return render(request, "blogging/add.html", {'form':form})
  
 
