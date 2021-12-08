@@ -5,10 +5,12 @@ from blogging.models import Post
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
+
 class PostListView(ListView):
     published = Post.objects.exclude(published_date__exact=None)
     queryset = published.order_by("-published_date")
     template_name = "blogging/list.html"
+
 
 class PostDetailView(DetailView):
     queryset = Post.objects.exclude(published_date__exact=None)
@@ -21,6 +23,3 @@ class PostDetailView(DetailView):
             raise Http404
         context = {"object": post}
         return render(request, "blogging/detail.html", context)
-
-
-
