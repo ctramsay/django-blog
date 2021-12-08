@@ -26,16 +26,15 @@ class PostDetailView(DetailView):
         context = {"object": post}
         return render(request, "blogging/detail.html", context)
 
+
 def add_model(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form = MyPostForm(request.POST)
         if form.is_valid():
             model_instance = form.save(commit=False)
             model_instance.published_date = datetime.now()
             model_instance.save()
-            return redirect('/')
+            return redirect("/")
     else:
         form = MyPostForm()
-        return render(request, "blogging/add.html", {'form':form})
- 
-
+        return render(request, "blogging/add.html", {"form": form})
